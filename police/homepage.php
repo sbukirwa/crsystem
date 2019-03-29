@@ -1,13 +1,13 @@
 <?php 
-	session_start();
-	$con = mysqli_connect("localhost","root","","system");
-	$badgeno = $_SESSION['badge_no'];
-	$q = "SELECT officername FROM sergent WHERE badgeno ='$badgeno' ";
-	$do = mysqli_query($con,$q);
-	if(mysqli_num_rows($do) > 0){
-		$rows = mysqli_fetch_array($do, MYSQLI_ASSOC);
-		$officername = $rows['officername'];
-	}
+  session_start();
+  $con = mysqli_connect("localhost","root","","system");
+  $badgeno = $_SESSION['badge_no'];
+  $q = "SELECT officername FROM sergent WHERE badgeno ='$badgeno' ";
+  $do = mysqli_query($con,$q);
+  if(mysqli_num_rows($do) > 0){
+    $rows = mysqli_fetch_array($do, MYSQLI_ASSOC);
+    $officername = $rows['officername'];
+  }
 
  ?>
 <!DOCTYPE html>
@@ -92,16 +92,16 @@ label
 </div>
  </div>
 
-	
+  
 
-		<center><h3>Welcome, Officer <p><?php echo $officername; ?></p></h3></center>
-		
-		<form action="loginPolice.php" method="post">
-		
-			
-				
-		</form>
-	</div>
+    <center><h3>Welcome, Officer <p><?php echo $officername; ?></p></h3></center>
+    
+    <form action="index.php" method="post">
+    
+      
+        
+    </form>
+  </div>
 </body>
 </html> 
 
