@@ -132,8 +132,8 @@ input {
                 <br>
             </div>
                
-			   	<div class = "wrapper">		
-				<a href="loginPolice.php"><button type="button" class="back_btn"><< Back to Login</button></a>
+                <div class = "wrapper">     
+                <a href="index.php"><button type="button" class="back_btn"><< Back to Login</button></a>
             </div>
                 
             </div>
@@ -143,7 +143,7 @@ input {
 </html>
 <?php 
  ob_start();
-		$con=mysqli_connect ("localhost", "root", "","system");
+        $con=mysqli_connect ("localhost", "root", "","system");
         if(ISSET($_POST['register']))
             {
                 $badgeno=$_POST['badgeno'];
@@ -165,7 +165,7 @@ input {
                             {
                                 echo "<script> alert('Registration successful'); </script>";
 
-                                echo("<script>location.href = 'loginPolice.php'</script>");
+                                echo("<script>location.href = 'index.php'</script>");
                             }
                             else
                             {
@@ -173,7 +173,7 @@ input {
                             }
                         }
                         else{
-                        	echo "<script> alert('Passwords Do Not Match!'); </script>";
+                            echo "<script> alert('Passwords Do Not Match!'); </script>";
                         }
 ob_end_flush();
                     }?>
