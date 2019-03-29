@@ -62,7 +62,7 @@ input {
 	<div id="main-wrapper">
 	<center><h2>POLICE LOGIN FORM</h2></center>
 			
-		<form action="loginPolice.php" method="POST">
+		<form action="index.php" method="POST">
 		
 			<div class="inner_container">
 				<center><label>Badge number</label>

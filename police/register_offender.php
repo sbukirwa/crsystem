@@ -1,46 +1,53 @@
-<?php 
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
-<body>
-<header>
-	<div class="container">
-		<div id="branding">
-     	<h1><img src="Kenya_Police_Flag.png" style="width:120px;height:100px;"/><span class="highlight"> CRIME RECORDING SYSTEM <img src="kenyalo.png" style="width:110px;height:90px; float:right; padding-left:180px;"></h1> 
-		</div>
-		
-	</div>
-	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> -->
-	</header>	
-		<section id="main">
-			<div class="container">
-				<article id="main-col"></article>
-					
-
+<head>
+<title>Police registration form</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="./css/style.css">
 
+<header>
+    <div class="container">
+        <div id="branding">
+        <h1><img src="Kenya_Police_Flag.png" style="width:120px;height:90px;"/><span class="highlight"> CRIME RECORDING SYSTEM <img src="kenyalo.png" style="width:110px;height:90px; float:right; padding-left:180px;"></h1>
+        </div>
+       
+    </div>
+</header>  
+        <section id="main">
+            <div class="container">
+                <article id="main-col"></article>
+                   
+ 
+
 <style>
 button{
 height:38px;
-	background:#e8491d;
-	border:0;
-	padding-left: 20px;
-	padding-right: 20px;
-	color:#ffffff;
-	margin-right: -190px;
+    background:#e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+    margin-right: -190px;
     margin-top: 50px;
     display:inline-block;
-  }	
-label{
+  }
+label
+{
  margin-right: 10px;
  margin-top: 5px;
  display:inline-block;
  text-align: left;
- width: 150px;
+ width: 100px;
+ vertical-align: middle;
+ float:center;
+}
+select{
+ margin-right: 45px;
+ margin-top: 5px;
+ display:inline-block;
+ text-align: left;
+ width: 190px;
  vertical-align: middle;
  float:center;
 }
@@ -52,145 +59,123 @@ input {
     margin-right:40px;
     width:190px;
 }
-.wp
-{
- margin-right: 10px;
- margin-top: 5px;
- display:inline-block;
- text-align: center;
- width: 160px;
- vertical-align: middle;
- padding-left: 433px;	
+.wrapper{
+    padding-left:445px;
+    margin-top:-45px;
+
 }
-.radio
-{
-padding-left: 433px;
-}
-.answer{
-	padding-left:400px;
+.wow{
+  padding-left: 30px;
+    margin-top:-45px; 
 }
 </style>
+ </head>
 
-<body style="background-color:#bdc3c7">
-	<div id="main-wrapper">
-	<center><h2>TRAFFIC OFFENCE FORM</h2></center>
-	
-	<form action="register_offender.php" method="post">
-	<div class="inner_container">
-		
-	            <center><h3>OFFENDER DETAILS<h3></center>
-				<center><label>Identification No.</label>
-				<input type="text" placeholder="Enter ID no" name="ID_no" maxlength="10" required></br></center>
-				</br>
-				
-				<center><label>Name</label>
-				<input type="text" placeholder="Enter Name" name="name" required></br></center>
-				</br>
-				
-				<center><label>Date Of Birth</label>
-				<input type="date" placeholder ="Enter Date of Birth" name="dateofbirth" max="1999-12-31" required></br></center>
-				</br>
-				
-				<center><h3>CRIME DETAILS<h3></center>
-				</br>
-
-				<center><label>Offence and fine</label>
-				<select name="offence_and_fine" value="">
-                    <option value="No identification plates - Ksh.10,000">No identification plates - Ksh.10,000</option>
-                    <option value="Exceeding Speed Limit - Ksh.5,000">Exceeding Speed Limit - Ksh.5,000</option>
-                    <option value="Driving through pavementc - Ksh.5,000">Driving through pavementc - Ksh.5,000</option>
-                    <option value="Unqualified PSV driver - Ksh.5,000">Unqualified PSV driver - Ksh.5,000</option>
-                    <option value="Expired Drivng License - Ksh.1,000">Expired Drivng License - Ksh.1,000</option>
-                    <option value="Driving without a License - Ksh.500">Driving without a License - Ksh.500</option>
+<body style="background-color:#bdc3c7;">
+    <div id="main-wrapper">
+    <center><h2>REGISTRATION FORM</h2></center>
+ 
+        <form method="POST" action="register_police.php">
+           
+            <div class="inner_container">
+                <center><label>Badge number</label>
+                <input type="text" placeholder="Enter Badge number" name="badgeno" required> </center>
+                <br>
+               
+                <center><label>Name</label>
+                <input type="text" placeholder="Enter Name" name="name" required></center>
+                <br>
+               
+                <center><label>Date Of Birth</label>
+                <input type="date" placeholder ="Enter Date of Birth" min="1954-12-31" max="1994-12-31" name="dob" required></center>
+                <br>
+               
+                <center><label>Jurisdiction</label>
+                <select name="jurisdiction" required> 
+                    <option value="Baringo County">Baringo County</option>
+                    <option value="Busia County">Busia County</option>
+                    <option value="Elgeyo Marakwet County">Elgeyo Marakwet County</option>
+                    <option value="Embu County">Embu County</option>
+                    <option value="Isiolo County">Isiolo County</option>
+                    <option value="Kakamega County">Kakamega County</option>
+                    <option value="Kericho County">Kericho County</option>
+                    <option value="Kiambu County">Kiambu County</option>
+                    <option value="Kisii County">Kisii County</option>
+                    <option value="Laikipia County">Laikipia County</option>
+                    <option value="Lamu County">Lamu County</option>
+                    <option value="Machakos County">Machakos County</option>
+                    <option value="Mombasa County">Mombasa County</option>
+                    <option value="Nairobi County">Nairobi County</option>
+                    <option value="Nakuru County">Nakuru County</option>
+                    <option value="Nyandarua County">Nyandarua County</option>
+                    <option value="Nyeru County">Nyeru County</option>
+                    <option value="Samburu County">Samburu County</option>
+                    <option value="Siaya County">Siaya County</option>
+                    <option value="Taita Taveta County">Taita Taveta County</option>
+                    <option value="Tharaka Nithi County">Tharaka Nithi County</option>
+                    <option value="Uasin Gishu County">Uasin Gishu County</option>
+                    <option value="Vihiga County">Vihiga County</option>
+                    <option value="Wajir County">Wajir County</option>
                     </select></br></center>
-				</br>
-				
-				<center><h3>CAR DETAILS<h3></center>
-				<center><label>Number Plate</label>
-				<input type="text" placeholder ="Enter number plate" name="no_plate" required></br></center>
-				</br>
-			
-				<center><label>Model</label>
-				<input type="text" placeholder="Enter Model" name="model" required></br></center>
-				</br>
-				
-				<center><h3>PAYMENT DETAILS<h3></center>
-				<center><label> Paybill No - 555679 </label></center>
-				<center><label> Account No - 523451 </label></center>
+                <br> 
 
-				</br>
-				<center><label>Phone Number</label>
-				<input type="text" placeholder ="Enter Phone Number" name="phonenumber" required></br></center>
-				</br>
-
-				<div class = "wp">
-				<center><label>Paid</label> </div>
-					<div class = "answer">
-				<input type="radio" name="answer" value="Yes" required>Yes <input type="radio" name="answer" value="No" required>No</div></center>
-			
-				
-				</br>
-				<center><label>Transaction ID</label>
-				<input type="text" placeholder ="Enter Transaction ID" name="transaction_ID" required></br></center>
-				</br>
-				
-				<center><h3>OFFICER DETAILS<h3></center>
-				<center><label>Badge No.</label><?php echo $_SESSION['badge_no']; ?></br></center>
-				</br>
-				
-				<center><a href="homepage.php"><button name="register" class="sign_up_btn" type="submit">Submit</button></br></center>
-				</br>
-				
-				
-			</div>
-		</form>
-	
+                <center><label>Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required> </center>
+                <br>
+               
+                <center><label>Confirm Password</label>
+                <input type="password" placeholder="Enter Password" name="cpassword" required> </center>
+                <br>
+               
+               <div class = "wow">
+                <center><button name="register" class="submit_btn" type="submit">Register</button> </center>
+                <br>
+            </div>
+               
+			   	<div class = "wrapper">		
+				<a href="index.php"><button type="button" class="back_btn"><< Back to Login</button></a>
+            </div>
+                
+            </div>
+        </form>
+     </div>
 </body>
-</html>	
-
+</html>
 <?php 
-
-		$con=mysqli_connect("localhost", "root", "","system");
-		$badgeno = $_SESSION['badge_no'];
+ ob_start();
+		$con=mysqli_connect ("localhost", "root", "","system");
         if(ISSET($_POST['register']))
-        {
-          $offender_id=$_POST['ID_no'];
-          $offender_name=$_POST['name'];
-          $offender_dob=$_POST['dateofbirth'];
-          $crime_fine=$_POST['offence_and_fine'];
-          $no_plate=$_POST['no_plate'];
-          $model=$_POST['model'];
-          $status=$_POST['answer'];
-          $transaction_id=$_POST['transaction_ID'];
+            {
+                $badgeno=$_POST['badgeno'];
+                $officername=$_POST['name'];
+                $officerdob=$_POST['dob'];
+                $jurisdiction=$_POST['jurisdiction'];  
+                $opassword=$_POST['password'];
+                $ocpassword=$_POST['cpassword'];
+               
+               
+                $password = hash('sha256', $opassword);
+                $cpassword = hash('sha256', $ocpassword);
 
-         
+                if($password == $cpassword){
+                $q = "INSERT INTO sergent (badgeno, officername, officerdob, jurisdiction, password) VALUES ('$badgeno','$officername','$officerdob','$jurisdiction','$password')";
+                            
+                $query_run = mysqli_query($con,$q);
+                if($query_run)
+                            {
+                                echo "<script> alert('Registration successful'); </script>";
 
-          $sqlOffender = "INSERT INTO offender (offender_id, offender_name, offender_dob, badgeno) VALUES ('$offender_id','$offender_name','$offender_dob','$badgeno')";
+                                echo("<script>location.href = 'loginPolice.php'</script>");
+                            }
+                            else
+                            {
+                                echo "<p class='bg-danger msg-block'>Registration Unsuccessful due to server error. Please try later</p>";
+                            }
+                        }
+                        else{
+                        	echo "<script> alert('Passwords Do Not Match!'); </script>";
+                        }
+ob_end_flush();
+                    }?>
 
-           if(!mysqli_query($con,$sqlOffender)){
-  	       die('Error:'.mysqli_error($con));
-           }
-           echo $badgeno;
-           $sqlCrime = "INSERT INTO crime (badgeno, offender_id,crime_fine) VALUES ('$badgeno','$offender_id','$crime_fine')";
-
-           if(!mysqli_query($con,$sqlCrime)){
-	       die('Error:'.mysqli_error($con));
-           }
-  			$sqlPayment = "INSERT INTO payment (transaction_id ,status,badgeno) VALUES ('$transaction_id','$status','$badgeno')";
-
-           if(!mysqli_query($con,$sqlPayment)){
-	       die('Error:'.mysqli_error($con));
-           }
-           $sqlCar = "INSERT INTO car (no_plate, model, badgeno) VALUES ('$no_plate','$model','$badgeno')";
-
-           if(!mysqli_query($con,$sqlCar)){
-	       die('Error:'.mysqli_error($con));
-           }
-            
-          echo("<script>location.href = 'homepage.php'</script>");
-
-
-        }
-
-
-?>
+                   
