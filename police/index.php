@@ -10,7 +10,7 @@ session_start();
 		<div id="branding">
      	<h1><img src="Kenya_Police_Flag.png" style="width:120px;height:100px;"/><span class="highlight"> CRIME RECORDING SYSTEM <img src="kenyalo.png" style="width:120px;height:90px; float:right; padding-left:180px;"></h1> 
 		</div>
-		
+	
 	</div>
 	</header>	
 		<section id="main">
