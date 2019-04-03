@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include("connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +45,7 @@ height:38px;
 
 <?php
 $badge_no = $_SESSION['badge_no'];
-$con=mysqli_connect("localhost", "root", "","system");
+
 
 
 $sqlOffender = "SELECT  * FROM offender";

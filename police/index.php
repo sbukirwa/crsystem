@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include("connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +84,7 @@ input {
 </html>
 <?php
 
-			$con=mysqli_connect("localhost", "root", "","system");
+			
 			if(ISSET($_POST['login']))
 			{
 			    $badgeno=$_POST['badgeno'];

@@ -1,6 +1,7 @@
 <?php 
   session_start();
-  $con = mysqli_connect("localhost","root","","system");
+  include("connection.php");
+ 
   $badgeno = $_SESSION['badge_no'];
   $q = "SELECT officername FROM sergent WHERE badgeno ='$badgeno' ";
   $do = mysqli_query($con,$q);

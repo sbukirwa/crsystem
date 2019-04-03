@@ -1,3 +1,7 @@
+<?php
+include("connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,7 +147,7 @@ input {
 </html>
 <?php 
  ob_start();
-        $con=mysqli_connect ("localhost", "root", "","system");
+       
         if(ISSET($_POST['register']))
             {
                 $badgeno=$_POST['badgeno'];
