@@ -5,8 +5,8 @@ def run():
     """To run Github code"""
     msg = Popen("git add .", shell=True)
     commit = input("What change did you make Sonia? :  ")
-    msg += Popen("git commit -m "+str(commit), shell=True)
-    msg += Popen("git push origin master", shell=True)
+    msg = Popen("git commit -m "+str(commit), shell=True)
+    msg = Popen("git push origin master", shell=True)
     return msg+" All done madam"
 
 
