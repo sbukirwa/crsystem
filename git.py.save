@@ -1,0 +1,14 @@
+"""module to run a git process for a user"""
+from subprocess import Popen
+
+def run():
+    """To run Github code"""
+    msg = Popen("git add .")
+    commit = input("What change did you make Sonia? :  ")
+    msg += Popen("git commit -m "+commit)
+    msg += Popen("git push origin master")
+
+
+if __name__ == '__main__':
+    run()
+    print "All done"
