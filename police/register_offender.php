@@ -113,10 +113,6 @@ input {
                 <center><label> Account No - 523451 </label></center>
 
                 </br>
-                <center><label>Phone Number</label>
-                <input type="text" placeholder ="Enter Phone Number" name="phonenumber" required></br></center>
-
-                </br>
                 <div class = "rd">
                 <center><label>Paid</label>
                 </div>
