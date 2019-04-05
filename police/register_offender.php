@@ -179,6 +179,7 @@ input {
            die('Error:'.mysqli_error($con));
            }
             
+          
           echo("<script>location.href = 'homepage.php'</script>");
 
 

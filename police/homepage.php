@@ -89,7 +89,7 @@ label
   <a href="register_offender.php">Create</a>
   <a href="viewPolice.php">View</a>
  <div class="topnav-right">
-  <a href="loginPolice.php">Logout</a>
+  <a href="index.php">Logout</a>
 </div>
  </div>
 
