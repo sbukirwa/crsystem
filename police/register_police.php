@@ -83,7 +83,7 @@ input {
            
             <div class="inner_container">
                 <center><label>Badge number</label>
-                <input type="text" placeholder="Enter Badge number" name="badgeno" pattern="[KB0-9]{5}"required> </center>
+                <input type="text" placeholder="Enter Badge number" name="badgeno" pattern="[KB0-9]{5}" required> </center>
                 <br>
                
                 <center><label>Name</label>
