@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) {
 body{
 	 height: 99%;
     width: 99%;
@@ -6,7 +7,7 @@ padding:0;
 margin:0;
 background-color:#f4f4f4;
 }
-
+}
 .container{
 	width:100%;
 	margin:auto;
