@@ -82,9 +82,9 @@ input {
         <form method="POST" action="register_police.php">
            
             <div class="inner_container">
-                <center><label>Badge number</label>
-                <input type="text" placeholder="Enter Badge number" name="badgeno" pattern="[KB0-9]{5}" required> </center>
-                <br>
+            <center><label>Badge number</label>
+            <input type="text" placeholder="Enter Badge no" name="badgeno" pattern="[KB0-9]{5}" required> </center>
+            <br>
                
                 <center><label>Name</label>
                 <input type="text" placeholder="Enter Name" name="name" required></center>
