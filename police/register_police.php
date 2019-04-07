@@ -83,7 +83,7 @@ input {
            
             <div class="inner_container">
                 <center><label>Badge number</label>
-                <input type="text" placeholder="Enter Badge number" name="badgeno" required> </center>
+                <input type="text" placeholder="Enter Badge number" name="badgeno" pattern="[KB0-9]{5}"required> </center>
                 <br>
                
                 <center><label>Name</label>
@@ -124,7 +124,7 @@ input {
                 <br> 
 
                 <center><label>Password</label>
-                <input type="password" placeholder="Enter Password" name="password" required> </center>
+                <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required> </center>
                 <br>
                
                 <center><label>Confirm Password</label>

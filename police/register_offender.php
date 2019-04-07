@@ -103,7 +103,7 @@ input {
         
         <center><h3>CAR DETAILS<h3></center>
         <center><label>Number Plate</label>
-        <input type="text" placeholder ="Enter number plate" name="no_plate" required></br></center>
+        <input type="text" placeholder ="Enter number plate" name="no_plate" maxlength="7" required></br></center>
         </br>
       
         <center><label>Model</label>
@@ -129,7 +129,7 @@ input {
 
                 </br>
         <center><label>Transaction ID</label>
-        <input type="text" placeholder ="Enter Transaction ID" name="transaction_ID" required></br></center>
+        <input type="text" placeholder ="Enter Transaction ID" name="transaction_ID" maxlength="10" required></br></center>
         </br>
         
         <center><h3>OFFICER DETAILS<h3></center>
