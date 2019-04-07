@@ -17,7 +17,7 @@ include("connection.php");
 			<div class="container">
 				<article id="main-col"></article>
 					
-
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="./css/style.css">
